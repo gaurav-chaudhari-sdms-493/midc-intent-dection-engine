@@ -13,6 +13,77 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sakib-inamdar-sdms488"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/gaurav-chaudhari-sdms-493/midc-intent-dection-engine.git",
+    "accountId": "a67ee809-f668-4c8d-824c-c655f9ef4ce2"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2325085902470294" />
+      <entry key="MS500" value="2.709490059681376" />
+      <entry key="S2" value="5.535829009699668" />
+      <entry key="S5" value="8.903860486020426" />
+      <entry key="S10" value="11.546126218596292" />
+      <entry key="S30" value="14.242894627962704" />
+      <entry key="S60" value="15.081612158211833" />
+      <entry key="M2" value="15.530352022515961" />
+      <entry key="M5" value="15.809565519280397" />
+      <entry key="M10" value="15.904347891787435" />
+      <entry key="M15" value="15.936134867223828" />
+      <entry key="M30" value="15.968018797014592" />
+      <entry key="H1" value="15.983997219388417" />
+      <entry key="H2" value="15.99199556241461" />
+      <entry key="H4" value="15.995997019074684" />
+      <entry key="D1" value="15.999332730634144" />
+      <entry key="W1" value="15.9999046732116" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1836855214404731" />
+      <entry key="MS500" value="2.68758321470502" />
+      <entry key="S2" value="5.524315652988115" />
+      <entry key="S5" value="8.896060334874631" />
+      <entry key="S10" value="11.54091087166776" />
+      <entry key="S30" value="14.240699829782182" />
+      <entry key="S60" value="15.080443164705937" />
+      <entry key="M2" value="15.529748322722789" />
+      <entry key="M5" value="15.80931925335076" />
+      <entry key="M10" value="15.904223945929228" />
+      <entry key="M15" value="15.936052054864476" />
+      <entry key="M30" value="15.967977299653647" />
+      <entry key="H1" value="15.983976447858543" />
+      <entry key="H2" value="15.991985170930553" />
+      <entry key="H4" value="15.99599182190203" />
+      <entry key="D1" value="15.999331864239927" />
+      <entry key="W1" value="15.999904549436126" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
   &quot;fromUser&quot;: false
