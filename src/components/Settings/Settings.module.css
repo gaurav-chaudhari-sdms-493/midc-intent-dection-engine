@@ -1,0 +1,200 @@
+/* Design Tokens (re-declared for clarity, but ideally imported or global) */
+:root {
+  /* Colors */
+  --color-bg:         #F6F5F1;
+  --color-surface:    #FFFFFF;
+  --color-border:     #E4E0D6;
+  --color-ink:        #2E2A24;
+  --color-ink-muted:  #7A7568;
+  --color-sage:       #B7CDBB;
+  --color-sage-deep:  #6E8F76;
+  --color-clay:       #E3B7A0;
+  --color-clay-deep:  #B06A4C;
+  --color-slate:      #A9B7C4;
+  --color-slate-deep: #5B6E7D;
+  --color-gold:       #E8CE8F;
+
+  /* Typography */
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-data: "IBM Plex Mono", monospace;
+
+  /* Layout */
+  --border-radius-card: 12px;
+  --border-width-hairline: 1px;
+  --padding-base: 16px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-base);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.section {
+  background-color: var(--color-surface);
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--border-radius-card);
+  padding: var(--padding-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-base);
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--color-ink);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 0.9em;
+  color: var(--color-ink-muted);
+  font-weight: 500;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="password"],
+.formGroup input[type="number"],
+.formGroup select {
+  padding: 8px 12px;
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: 6px;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.formGroup input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none; /* Override default look */
+  height: 8px;
+  background: var(--color-bg);
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+.formGroup input[type="range"]:hover {
+  opacity: 1;
+}
+
+.formGroup input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-sage-deep);
+  cursor: pointer;
+}
+
+.formGroup input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-sage-deep);
+  cursor: pointer;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--padding-base);
+  margin-top: var(--padding-base);
+}
+
+.actionButton {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.actionButton.primary {
+  background-color: var(--color-sage-deep);
+  color: var(--color-surface);
+  border: none;
+}
+
+.actionButton.primary:hover:not(:disabled) {
+  background-color: var(--color-sage);
+  color: var(--color-ink);
+}
+
+.actionButton.secondary {
+  background-color: var(--color-surface);
+  color: var(--color-ink-muted);
+  border: var(--border-width-hairline) solid var(--color-border);
+}
+
+.actionButton.secondary:hover:not(:disabled) {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.actionButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.testConnectionButton {
+  background-color: var(--color-slate);
+  color: var(--color-slate-deep);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.1s ease-in-out;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.testConnectionButton:hover {
+  background-color: var(--color-slate-deep);
+  color: var(--color-surface);
+}
+
+.testConnectionResult {
+  font-size: 0.85em;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.testConnectionResult.success {
+  background-color: var(--color-sage);
+  color: var(--color-sage-deep);
+}
+
+.testConnectionResult.error {
+  background-color: var(--color-clay);
+  color: var(--color-clay-deep);
+}
+
+.userManagementPlaceholder {
+  color: var(--color-ink-muted);
+  font-size: 0.9em;
+  text-align: center;
+  padding: var(--padding-base);
+  border: var(--border-width-hairline) dashed var(--color-border);
+  border-radius: 8px;
+}

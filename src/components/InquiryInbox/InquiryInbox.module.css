@@ -1,0 +1,203 @@
+/* InquiryInbox.module.css */
+
+.inquiryInbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-base);
+  height: 100%; /* Ensure it takes full height of parent for scrolling */
+}
+
+/* Filter Bar */
+.filterBar {
+  background-color: var(--color-surface);
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--border-radius-base);
+  padding: var(--padding-base);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-base);
+  align-items: center;
+  flex-shrink: 0; /* Don't let it shrink */
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filterGroup label {
+  font-size: 0.9em;
+  color: var(--color-ink-muted);
+}
+
+.filterBar select,
+.filterBar input[type="search"] {
+  padding: 8px 12px;
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: 6px;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 0.9em;
+}
+
+.filterBar input[type="search"] {
+  flex-grow: 1; /* Allow search bar to take more space */
+  min-width: 150px;
+}
+
+.clearFiltersButton {
+  background: none;
+  border: none;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  font-size: 0.9em;
+  text-decoration: underline;
+  margin-left: auto; /* Push to the right */
+}
+
+/* Inquiry List */
+.inquiryList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: var(--padding-base);
+  flex-grow: 1; /* Allow list to take remaining height */
+  overflow-y: auto; /* Make list scrollable */
+  padding-right: 4px; /* Account for scrollbar */
+}
+
+/* Inquiry Card */
+.inquiryCard {
+  background-color: var(--color-surface);
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--border-radius-base);
+  padding: var(--padding-base);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.inquiryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.priorityStripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+/* Priority Colors for Stripe */
+.priorityHigh { background-color: var(--color-clay); }
+.priorityMedium { background-color: var(--color-gold); }
+.priorityLow { background-color: var(--color-sage); }
+.priorityInformational { background-color: var(--color-slate); }
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  padding-left: 8px; /* Offset for stripe */
+}
+
+.senderName {
+  font-weight: 500;
+  font-size: 1.1em;
+  color: var(--color-ink);
+}
+
+.timestamp {
+  font-size: 0.85em;
+  color: var(--color-ink-muted);
+  font-family: var(--font-data);
+}
+
+.slaCountdown {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--color-gold); /* Gold for warning */
+  font-family: var(--font-data);
+}
+
+.inquiryPreview {
+  font-size: 0.95em;
+  color: var(--color-ink);
+  margin-bottom: 12px;
+  padding-left: 8px; /* Offset for stripe */
+  line-height: 1.4;
+  flex-grow: 1; /* Allow text to take space */
+}
+
+.cardFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 8px; /* Offset for stripe */
+  margin-top: auto; /* Push to bottom */
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: var(--font-data);
+  white-space: nowrap; /* Prevent tags from breaking */
+}
+
+.industryTag {
+  background-color: var(--color-slate);
+  color: var(--color-surface);
+}
+
+.intentTag {
+  background-color: var(--color-bg);
+  border: var(--border-width-hairline) solid var(--color-border);
+  color: var(--color-ink-muted);
+}
+
+.languageBadge {
+  background-color: var(--color-ink-muted);
+  color: var(--color-surface);
+}
+
+/* Empty State */
+.emptyState {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--padding-base) * 2);
+  color: var(--color-ink-muted);
+}
+
+.emptyState p {
+  font-size: 1.1em;
+  margin-bottom: var(--padding-base);
+}
+
+.emptyState button {
+  background-color: var(--color-sage);
+  color: var(--color-sage-deep);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.emptyState button:hover {
+  background-color: var(--color-sage-deep);
+  color: var(--color-surface);
+}

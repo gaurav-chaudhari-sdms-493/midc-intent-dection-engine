@@ -1,0 +1,63 @@
+/* Font Imports */
+/* Fraunces for Display/Headings */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+/* Inter for Body/UI Text */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+/* IBM Plex Mono for Data/Numbers */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+/* Global Styles & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Default body font */
+  color: var(--color-ink); /* Use ink color from design tokens */
+  background-color: var(--color-bg); /* Use background color from design tokens */
+}
+
+/* Ensure root element for React app takes full height */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Design Tokens (re-declared here for global access if needed, though Layout.module.css has them) */
+:root {
+  /* Colors */
+  --color-bg:         #F6F5F1;
+  --color-surface:    #FFFFFF;
+  --color-border:     #E4E0D6;
+  --color-ink:        #2E2A24;
+  --color-ink-muted:  #7A7568;
+  --color-sage:       #B7CDBB;
+  --color-sage-deep:  #6E8F76;
+  --color-clay:       #E3B7A0;
+  --color-clay-deep:  #B06A4C;
+  --color-slate:      #A9B7C4;
+  --color-slate-deep: #5B6E7D;
+  --color-gold:       #E8CE8F;
+
+  /* Typography */
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-data: "IBM Plex Mono", monospace;
+
+  /* Layout */
+  --border-radius-card: 12px;
+  --border-width-hairline: 1px;
+  --padding-base: 16px;
+  --sidebar-width: 220px;
+  --sidebar-width-collapsed: 60px;
+  --topbar-height: 60px;
+}

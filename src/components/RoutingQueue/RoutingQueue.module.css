@@ -1,0 +1,165 @@
+/* RoutingQueue.module.css */
+
+.routingQueue {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto; /* Allow scrolling for the entire queue if content is too tall */
+}
+
+.kanbanBoard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+  gap: var(--padding-base);
+  flex-grow: 1;
+  padding: var(--padding-base); /* Padding around the board */
+}
+
+.column {
+  background-color: var(--color-surface);
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--border-radius-base);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* For the top border effect */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02); /* Subtle shadow */
+}
+
+/* Column Top Borders */
+.column.new { border-top: 4px solid var(--color-slate); }
+.column.inReview { border-top: 4px solid var(--color-gold); }
+.column.escalated { border-top: 4px solid var(--color-clay); }
+.column.resolved { border-top: 4px solid var(--color-sage); }
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px var(--padding-base);
+  border-bottom: var(--border-width-hairline) solid var(--color-border);
+  background-color: var(--color-surface); /* Ensure header background is white */
+}
+
+.columnTitle {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1em;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.countBadge {
+  background-color: var(--color-bg);
+  color: var(--color-ink-muted);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  font-family: var(--font-data);
+}
+
+.columnContent {
+  flex-grow: 1;
+  padding: var(--padding-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-base);
+  overflow-y: auto; /* Make column content scrollable */
+}
+
+/* Compact Inquiry Card within columns */
+.inquiryCard {
+  background-color: var(--color-bg); /* Slightly different bg for cards in columns */
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--border-radius-base);
+  padding: 12px; /* More compact padding */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.inquiryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.priorityStripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+/* Priority Colors for Stripe (re-using from InquiryInbox) */
+.priorityHigh { background-color: var(--color-clay); }
+.priorityMedium { background-color: var(--color-gold); }
+.priorityLow { background-color: var(--color-sage); }
+.priorityInformational { background-color: var(--color-slate); }
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  padding-left: 8px; /* Offset for stripe */
+}
+
+.senderName {
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--color-ink);
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: var(--color-ink-muted);
+  font-family: var(--font-data);
+}
+
+.slaCountdown {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--color-gold);
+  font-family: var(--font-data);
+  margin-top: 4px;
+}
+
+.inquiryPreview {
+  font-size: 0.9em;
+  color: var(--color-ink);
+  margin-bottom: 10px;
+  padding-left: 8px; /* Offset for stripe */
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px; /* Offset for stripe */
+  margin-top: auto;
+}
+
+.moveDropdown {
+  padding: 6px 8px;
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: 6px;
+  background-color: var(--color-surface);
+  color: var(--color-ink-muted);
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+/* Empty Column State */
+.emptyColumn {
+  text-align: center;
+  color: var(--color-ink-muted);
+  font-size: 0.9em;
+  padding: var(--padding-base);
+  background-color: var(--color-bg);
+  border-radius: 8px;
+}
