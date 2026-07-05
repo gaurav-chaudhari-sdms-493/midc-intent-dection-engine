@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/midc-backend.iml" filepath="$PROJECT_DIR$/.idea/midc-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" filepath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/midc-backend@1.iml" filepath="$PROJECT_DIR$/.idea/midc-backend@1.iml" />
     </modules>
   </component>
 </project>

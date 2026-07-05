@@ -1,20 +1,17 @@
 from fastapi import FastAPI
 
-app = FastAPI(
-    title="MIDC Enterprise Intent Detection Engine",
-    version="0.1.0",
-    description="Enterprise AI-powered Investor Inquiry Management System",
+from app.api.v1.auth import router as auth_router
+from app.core.exceptions import UserAlreadyExists, InvalidCredentials
+from app.core.exception_handlers import (
+    user_already_exists_handler,
+    invalid_credentials_handler,
 )
 
-@app.get("/")
-def root():
-    return {
-        "message": "MIDC Intent Detection Engine API",
-        "status": "running"
-    }
+app = FastAPI(
+    title="MIDC Intent Detection Engine",
+)
 
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy"
-    }
+app.add_exception_handler(UserAlreadyExists, user_already_exists_handler)
+app.add_exception_handler(InvalidCredentials, invalid_credentials_handler)
+
+app.include_router(auth_router)

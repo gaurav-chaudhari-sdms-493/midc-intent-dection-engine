@@ -26,6 +26,12 @@ class Settings(BaseSettings):
             f"@{self.DB_HOST}:{self.DB_PORT}/{self.POSTGRES_DB}"
         )
 
+    JWT_SECRET: str
+    JWT_ALGORITHM: str = "HS256"
+
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+    REFRESH_TOKEN_EXPIRE_DAYS: int = 7
+
     model_config = SettingsConfigDict(
         env_file_encoding="utf-8",
         extra="ignore",
@@ -34,7 +40,13 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings():
-    return Settings()
+    # The .env file is in the parent directory of the 'app' directory.
+    # __file__ -> /path/to/project/apps/backend/app/core/config.py
+    # .parent -> /path/to/project/apps/backend/app/core
+    # .parent -> /path/to/project/apps/backend/app
+    # .parent -> /path/to/project/apps/backend
+    env_path = Path(__file__).parent.parent.parent / ".env"
+    return Settings(_env_file=env_path)
 
 
 settings = get_settings()

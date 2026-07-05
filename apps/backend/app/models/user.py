@@ -1,15 +1,12 @@
 import uuid
 
-from sqlalchemy import Enum
-from sqlalchemy import String
-from sqlalchemy import DateTime
+from sqlalchemy import Enum, String, DateTime
+from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.sql import func
-from sqlalchemy.orm import Mapped
-from sqlalchemy.orm import mapped_column
 
 from app.models.base import Base
-from app.models.enums import UserRole
-from app.models.enums import UserStatus
+from app.models.enums import UserRole, UserStatus
 
 
 class User(Base):
@@ -27,7 +24,7 @@ class User(Base):
         index=True,
     )
 
-    password_hash: Mapped[str] = mapped_column(
+    hashed_password: Mapped[str] = mapped_column(
         String(255),
         nullable=False,
     )
@@ -53,6 +50,10 @@ class User(Base):
         nullable=False,
         default=UserStatus.PENDING,
     )
+
+    @hybrid_property
+    def is_active(self) -> bool:
+        return self.status == UserStatus.ACTIVE
 
     created_at: Mapped[DateTime] = mapped_column(
         DateTime(timezone=True),
