@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="Add initial docker-compose.yml configuration" />
+    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="Deleted extras branches, update gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1439171558117327" />
-      <entry key="MS500" value="2.4005540737272177" />
-      <entry key="S2" value="5.432351468266558" />
-      <entry key="S5" value="10.058992840311477" />
-      <entry key="S10" value="15.934541220447176" />
-      <entry key="S30" value="29.13885376278981" />
-      <entry key="S60" value="40.762090399663336" />
-      <entry key="M2" value="58.94421809729362" />
-      <entry key="M5" value="93.79085261424348" />
-      <entry key="M10" value="121.08424048838411" />
-      <entry key="M15" value="135.38518970617278" />
-      <entry key="M30" value="154.865642306499" />
-      <entry key="H1" value="167.5426743976093" />
-      <entry key="H2" value="174.87419650358413" />
-      <entry key="H4" value="178.83074752926774" />
-      <entry key="D1" value="182.2897085785671" />
-      <entry key="W1" value="182.89814352559802" />
+      <entry key="MS100" value="1.0056014032215141" />
+      <entry key="MS500" value="1.3835848035979432" />
+      <entry key="S2" value="2.528653508241926" />
+      <entry key="S5" value="4.235396645024681" />
+      <entry key="S10" value="6.632763126250141" />
+      <entry key="S30" value="15.185566550636677" />
+      <entry key="S60" value="29.398268006554584" />
+      <entry key="M2" value="54.366409524733456" />
+      <entry key="M5" value="102.37670002405132" />
+      <entry key="M10" value="140.59043226832665" />
+      <entry key="M15" value="160.38655877663206" />
+      <entry key="M30" value="187.0134983756601" />
+      <entry key="H1" value="204.17901153892768" />
+      <entry key="H2" value="214.06614738540148" />
+      <entry key="H4" value="219.39270195166498" />
+      <entry key="D1" value="224.04508011568387" />
+      <entry key="W1" value="224.8630721448254" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="2.2528182276553543E-115" />
+      <entry key="MS500" value="1.1763734935530228E-23" />
+      <entry key="S2" value="1.8519800650450734E-6" />
+      <entry key="S5" value="0.005093948184603753" />
+      <entry key="S10" value="0.07137190052537315" />
+      <entry key="S30" value="0.4148035079394061" />
+      <entry key="S60" value="0.6440524108637483" />
+      <entry key="M2" value="0.8025287601474158" />
+      <entry key="M5" value="0.915765423879236" />
+      <entry key="M10" value="0.9569563333189434" />
+      <entry key="M15" value="0.9710943202383199" />
+      <entry key="M30" value="0.9854411805066402" />
+      <entry key="H1" value="0.9926939007099017" />
+      <entry key="H2" value="0.9963402534826651" />
+      <entry key="H4" value="0.9981684494526286" />
+      <entry key="D1" value="0.9996945083575908" />
+      <entry key="W1" value="0.999956352621934" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0623264589229728" />
-      <entry key="MS500" value="2.3576717584125895" />
-      <entry key="S2" value="5.404121026099756" />
-      <entry key="S5" value="10.038288846019329" />
-      <entry key="S10" value="15.918741257009053" />
-      <entry key="S30" value="29.129236291468505" />
-      <entry key="S60" value="40.754156898212266" />
-      <entry key="M2" value="58.93709763329996" />
-      <entry key="M5" value="93.78551155886824" />
-      <entry key="M10" value="121.08070550868227" />
-      <entry key="M15" value="135.38257289457584" />
-      <entry key="M30" value="154.86417805699315" />
-      <entry key="H1" value="167.54189702815034" />
-      <entry key="H2" value="174.8737955445445" />
-      <entry key="H4" value="178.83054384668176" />
-      <entry key="D1" value="182.28967417443735" />
-      <entry key="W1" value="182.89813859936578" />
+      <entry key="MS100" value="0.9574471695257176" />
+      <entry key="MS500" value="1.3625404804728511" />
+      <entry key="S2" value="2.5161294815288926" />
+      <entry key="S5" value="4.231228843359633" />
+      <entry key="S10" value="6.691580931256729" />
+      <entry key="S30" value="15.580894154875601" />
+      <entry key="S60" value="30.024495849462213" />
+      <entry key="M2" value="55.154879802994984" />
+      <entry key="M5" value="103.28333719866585" />
+      <entry key="M10" value="141.54155649624198" />
+      <entry key="M15" value="161.3533715205642" />
+      <entry key="M30" value="187.99655947303796" />
+      <entry key="H1" value="205.17044527058718" />
+      <entry key="H2" value="215.06183845497748" />
+      <entry key="H4" value="220.39054081639176" />
+      <entry key="D1" value="225.0447189801552" />
+      <entry key="W1" value="225.86302053059237" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -166,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783242307927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Deleted extras branches, update gitignore">
+      <option name="closed" value="true" />
+      <created>1783242539804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783242539804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +197,7 @@
     <MESSAGE value="Removed  legacy backend and frontend code related to AnalyticsDashboard and other components." />
     <MESSAGE value="Add LICENSE and README.md files" />
     <MESSAGE value="Add initial docker-compose.yml configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial docker-compose.yml configuration" />
+    <MESSAGE value="Deleted extras branches, update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted extras branches, update gitignore" />
   </component>
 </project>
