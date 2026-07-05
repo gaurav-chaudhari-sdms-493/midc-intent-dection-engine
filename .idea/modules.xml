@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/midc-backend.iml" filepath="$PROJECT_DIR$/.idea/midc-backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" filepath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" />
     </modules>
   </component>

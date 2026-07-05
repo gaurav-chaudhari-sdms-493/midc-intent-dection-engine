@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="chore: configure project environment">
+    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="feat: initialize FastAPI backend service">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/app/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/app/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="21" />
+    <option name="cachedIndexableFilesCount" value="82" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -47,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000002070526" />
-      <entry key="S2" value="1.0174448206048514" />
-      <entry key="S5" value="1.809540341150777" />
-      <entry key="S10" value="4.433749305226712" />
-      <entry key="S30" value="14.419017345855409" />
-      <entry key="S60" value="29.034182067466137" />
-      <entry key="M2" value="54.58711166990171" />
-      <entry key="M5" value="104.06331056453571" />
-      <entry key="M10" value="143.63549644213703" />
-      <entry key="M15" value="164.1409166577831" />
-      <entry key="M30" value="191.70533758186542" />
-      <entry key="H1" value="209.46520901083946" />
-      <entry key="H2" value="219.69204900699245" />
-      <entry key="H4" value="225.20102069766423" />
-      <entry key="D1" value="230.01245896375744" />
-      <entry key="W1" value="230.85839504440898" />
+      <entry key="MS100" value="1.4832710755143" />
+      <entry key="MS500" value="3.308091147816833" />
+      <entry key="S2" value="4.508372773488187" />
+      <entry key="S5" value="5.3741558863828125" />
+      <entry key="S10" value="6.40847316363628" />
+      <entry key="S30" value="8.258088982715503" />
+      <entry key="S60" value="9.686639070587688" />
+      <entry key="M2" value="11.802322359131995" />
+      <entry key="M5" value="19.90755255379688" />
+      <entry key="M10" value="34.10396881537528" />
+      <entry key="M15" value="50.22471007158831" />
+      <entry key="M30" value="103.85944468940941" />
+      <entry key="H1" value="182.3121172078867" />
+      <entry key="H2" value="254.82867014401657" />
+      <entry key="H4" value="305.0501564326838" />
+      <entry key="D1" value="356.4875833304149" />
+      <entry key="W1" value="366.32835674335996" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="7.652059204541525E-169" />
-      <entry key="MS500" value="2.380979544512803E-34" />
-      <entry key="S2" value="3.928157712713928E-9" />
-      <entry key="S5" value="4.3418575064685605E-4" />
-      <entry key="S10" value="0.02083712433727017" />
-      <entry key="S30" value="0.275177293221228" />
-      <entry key="S60" value="0.5245734393020943" />
-      <entry key="M2" value="0.7242744226480003" />
-      <entry key="M5" value="0.8789441085003405" />
-      <entry key="M10" value="0.9375201909827551" />
-      <entry key="M15" value="0.9579005438119376" />
-      <entry key="M30" value="0.9787239364662225" />
-      <entry key="H1" value="0.9893047743067971" />
-      <entry key="H2" value="0.994638011694102" />
-      <entry key="H4" value="0.9973154023146849" />
-      <entry key="D1" value="0.9995520657391777" />
-      <entry key="W1" value="0.99993599710351" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.1345363901326326E-282" />
+      <entry key="S10" value="1.4610052669763456E-141" />
+      <entry key="S30" value="1.1347075046910064E-47" />
+      <entry key="S60" value="3.368541976420953E-24" />
+      <entry key="M2" value="1.835358814079947E-12" />
+      <entry key="M5" value="2.020637426197001E-5" />
+      <entry key="M10" value="0.004495150082251973" />
+      <entry key="M15" value="0.027237221183147278" />
+      <entry key="M30" value="0.16503702973317005" />
+      <entry key="H1" value="0.40624749812542876" />
+      <entry key="H2" value="0.637375476564189" />
+      <entry key="H4" value="0.7983579877249235" />
+      <entry key="D1" value="0.9631626045840365" />
+      <entry key="W1" value="0.9946524877887736" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7474246243174691" />
-      <entry key="MS500" value="0.9434382511012446" />
-      <entry key="S2" value="1.0029544027578732" />
-      <entry key="S5" value="1.803181823864905" />
-      <entry key="S10" value="4.447683163150638" />
-      <entry key="S30" value="14.680057480881636" />
-      <entry key="S60" value="29.543601403765113" />
-      <entry key="M2" value="55.29837231469231" />
-      <entry key="M5" value="104.93336091101934" />
-      <entry key="M10" value="144.56723634563485" />
-      <entry key="M15" value="165.0945492924037" />
-      <entry key="M30" value="192.68167536563408" />
-      <entry key="H1" value="210.45324676139103" />
-      <entry key="H2" value="220.68603336281382" />
-      <entry key="H4" value="226.1980040057258" />
-      <entry key="D1" value="231.01195492824974" />
-      <entry key="W1" value="231.8583230083476" />
+      <entry key="MS100" value="1.4359175841996856" />
+      <entry key="MS500" value="3.287860002916983" />
+      <entry key="S2" value="4.501497792454133" />
+      <entry key="S5" value="5.370881872287081" />
+      <entry key="S10" value="6.406398096147757" />
+      <entry key="S30" value="8.253294325398103" />
+      <entry key="S60" value="9.680005172170764" />
+      <entry key="M2" value="11.796275625568235" />
+      <entry key="M5" value="19.903172332202573" />
+      <entry key="M10" value="34.105246118624066" />
+      <entry key="M15" value="50.24918506576437" />
+      <entry key="M30" value="104.02220682651952" />
+      <entry key="H1" value="182.71663848220084" />
+      <entry key="H2" value="255.4649258485655" />
+      <entry key="H4" value="305.8478683593529" />
+      <entry key="D1" value="357.45062383356526" />
+      <entry key="W1" value="367.3229913978873" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -119,6 +124,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.database_test.executor": "Run",
+    "Python.temp.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -142,8 +149,68 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages" />
+      <recent name="$PROJECT_DIR$/apps" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.temp">
+    <configuration name="database_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="midc-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/backend/app/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/backend/app/core/database_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="midc-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/backend/app/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/backend/app/core/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.temp" />
+        <item itemvalue="Python.database_test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -166,7 +233,7 @@
       <workItem from="1783233214573" duration="1838000" />
       <workItem from="1783238825286" duration="434000" />
       <workItem from="1783242947881" duration="302000" />
-      <workItem from="1783243453396" duration="2470000" />
+      <workItem from="1783243453396" duration="6971000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial docker-compose.yml configuration">
       <option name="closed" value="true" />
@@ -208,7 +275,39 @@
       <option name="project" value="LOCAL" />
       <updated>1783247153946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore: setup backend configuration module">
+      <option name="closed" value="true" />
+      <created>1783247534970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783247534970</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore: restructure directories for backend and frontend, update docker-compose paths">
+      <option name="closed" value="true" />
+      <created>1783247731837</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783247731837</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: initialize backend directory structure and add FastAPI boilerplate">
+      <option name="closed" value="true" />
+      <created>1783247975964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783247975964</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: initialize FastAPI backend service">
+      <option name="closed" value="true" />
+      <created>1783248974965</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1783248974965</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +332,14 @@
     <MESSAGE value="chore: add .gitkeep files for directory structure and initial setup scripts" />
     <MESSAGE value="docs: add contribution guidelines and development workflow" />
     <MESSAGE value="chore: configure project environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: configure project environment" />
+    <MESSAGE value="chore: setup backend configuration module" />
+    <MESSAGE value="chore: restructure directories for backend and frontend, update docker-compose paths" />
+    <MESSAGE value="chore: initialize backend directory structure and add FastAPI boilerplate" />
+    <MESSAGE value="feat: initialize FastAPI backend service" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: initialize FastAPI backend service" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/midc_intent_detection_engine$database_test.coverage" NAME="database_test Coverage Results" MODIFIED="1783251743345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/backend/app/core" />
+    <SUITE FILE_PATH="coverage/midc_intent_detection_engine$temp.coverage" NAME="temp Coverage Results" MODIFIED="1783251844590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/backend/app/core" />
   </component>
 </project>
