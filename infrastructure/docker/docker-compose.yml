@@ -7,7 +7,7 @@ networks:
 services:
   backend:
     build:
-      context: ../../backend
+      context: ../../apps/backend
       dockerfile: Dockerfile
     ports:
       - "8000:8000"

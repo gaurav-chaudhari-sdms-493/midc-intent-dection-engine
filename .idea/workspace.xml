@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="Deleted extras branches, update gitignore" />
+    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="chore: configure project environment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="12" />
+    <option name="cachedIndexableFilesCount" value="21" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -45,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0056014032215141" />
-      <entry key="MS500" value="1.3835848035979432" />
-      <entry key="S2" value="2.528653508241926" />
-      <entry key="S5" value="4.235396645024681" />
-      <entry key="S10" value="6.632763126250141" />
-      <entry key="S30" value="15.185566550636677" />
-      <entry key="S60" value="29.398268006554584" />
-      <entry key="M2" value="54.366409524733456" />
-      <entry key="M5" value="102.37670002405132" />
-      <entry key="M10" value="140.59043226832665" />
-      <entry key="M15" value="160.38655877663206" />
-      <entry key="M30" value="187.0134983756601" />
-      <entry key="H1" value="204.17901153892768" />
-      <entry key="H2" value="214.06614738540148" />
-      <entry key="H4" value="219.39270195166498" />
-      <entry key="D1" value="224.04508011568387" />
-      <entry key="W1" value="224.8630721448254" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000002070526" />
+      <entry key="S2" value="1.0174448206048514" />
+      <entry key="S5" value="1.809540341150777" />
+      <entry key="S10" value="4.433749305226712" />
+      <entry key="S30" value="14.419017345855409" />
+      <entry key="S60" value="29.034182067466137" />
+      <entry key="M2" value="54.58711166990171" />
+      <entry key="M5" value="104.06331056453571" />
+      <entry key="M10" value="143.63549644213703" />
+      <entry key="M15" value="164.1409166577831" />
+      <entry key="M30" value="191.70533758186542" />
+      <entry key="H1" value="209.46520901083946" />
+      <entry key="H2" value="219.69204900699245" />
+      <entry key="H4" value="225.20102069766423" />
+      <entry key="D1" value="230.01245896375744" />
+      <entry key="W1" value="230.85839504440898" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.2528182276553543E-115" />
-      <entry key="MS500" value="1.1763734935530228E-23" />
-      <entry key="S2" value="1.8519800650450734E-6" />
-      <entry key="S5" value="0.005093948184603753" />
-      <entry key="S10" value="0.07137190052537315" />
-      <entry key="S30" value="0.4148035079394061" />
-      <entry key="S60" value="0.6440524108637483" />
-      <entry key="M2" value="0.8025287601474158" />
-      <entry key="M5" value="0.915765423879236" />
-      <entry key="M10" value="0.9569563333189434" />
-      <entry key="M15" value="0.9710943202383199" />
-      <entry key="M30" value="0.9854411805066402" />
-      <entry key="H1" value="0.9926939007099017" />
-      <entry key="H2" value="0.9963402534826651" />
-      <entry key="H4" value="0.9981684494526286" />
-      <entry key="D1" value="0.9996945083575908" />
-      <entry key="W1" value="0.999956352621934" />
+      <entry key="MS100" value="7.652059204541525E-169" />
+      <entry key="MS500" value="2.380979544512803E-34" />
+      <entry key="S2" value="3.928157712713928E-9" />
+      <entry key="S5" value="4.3418575064685605E-4" />
+      <entry key="S10" value="0.02083712433727017" />
+      <entry key="S30" value="0.275177293221228" />
+      <entry key="S60" value="0.5245734393020943" />
+      <entry key="M2" value="0.7242744226480003" />
+      <entry key="M5" value="0.8789441085003405" />
+      <entry key="M10" value="0.9375201909827551" />
+      <entry key="M15" value="0.9579005438119376" />
+      <entry key="M30" value="0.9787239364662225" />
+      <entry key="H1" value="0.9893047743067971" />
+      <entry key="H2" value="0.994638011694102" />
+      <entry key="H4" value="0.9973154023146849" />
+      <entry key="D1" value="0.9995520657391777" />
+      <entry key="W1" value="0.99993599710351" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9574471695257176" />
-      <entry key="MS500" value="1.3625404804728511" />
-      <entry key="S2" value="2.5161294815288926" />
-      <entry key="S5" value="4.231228843359633" />
-      <entry key="S10" value="6.691580931256729" />
-      <entry key="S30" value="15.580894154875601" />
-      <entry key="S60" value="30.024495849462213" />
-      <entry key="M2" value="55.154879802994984" />
-      <entry key="M5" value="103.28333719866585" />
-      <entry key="M10" value="141.54155649624198" />
-      <entry key="M15" value="161.3533715205642" />
-      <entry key="M30" value="187.99655947303796" />
-      <entry key="H1" value="205.17044527058718" />
-      <entry key="H2" value="215.06183845497748" />
-      <entry key="H4" value="220.39054081639176" />
-      <entry key="D1" value="225.0447189801552" />
-      <entry key="W1" value="225.86302053059237" />
+      <entry key="MS100" value="0.7474246243174691" />
+      <entry key="MS500" value="0.9434382511012446" />
+      <entry key="S2" value="1.0029544027578732" />
+      <entry key="S5" value="1.803181823864905" />
+      <entry key="S10" value="4.447683163150638" />
+      <entry key="S30" value="14.680057480881636" />
+      <entry key="S60" value="29.543601403765113" />
+      <entry key="M2" value="55.29837231469231" />
+      <entry key="M5" value="104.93336091101934" />
+      <entry key="M10" value="144.56723634563485" />
+      <entry key="M15" value="165.0945492924037" />
+      <entry key="M30" value="192.68167536563408" />
+      <entry key="H1" value="210.45324676139103" />
+      <entry key="H2" value="220.68603336281382" />
+      <entry key="H4" value="226.1980040057258" />
+      <entry key="D1" value="231.01195492824974" />
+      <entry key="W1" value="231.8583230083476" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -114,29 +116,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feacture/gaurav&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/stark/PycharmProjects/midc-intent-dection-engine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "/home/stark/.local/share/JetBrains/PyCharm2026.1/Shell Script/shellcheck",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feacture/gaurav",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/stark/Projects/midc-intent-detection-engine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -158,6 +166,7 @@
       <workItem from="1783233214573" duration="1838000" />
       <workItem from="1783238825286" duration="434000" />
       <workItem from="1783242947881" duration="302000" />
+      <workItem from="1783243453396" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial docker-compose.yml configuration">
       <option name="closed" value="true" />
@@ -175,7 +184,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783242539804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: add .gitkeep files for directory structure and initial setup scripts">
+      <option name="closed" value="true" />
+      <created>1783243721740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783243721740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs: add contribution guidelines and development workflow">
+      <option name="closed" value="true" />
+      <created>1783244493353</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783244493353</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: configure project environment">
+      <option name="closed" value="true" />
+      <created>1783247153946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783247153946</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +230,9 @@
     <MESSAGE value="Add LICENSE and README.md files" />
     <MESSAGE value="Add initial docker-compose.yml configuration" />
     <MESSAGE value="Deleted extras branches, update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted extras branches, update gitignore" />
+    <MESSAGE value="chore: add .gitkeep files for directory structure and initial setup scripts" />
+    <MESSAGE value="docs: add contribution guidelines and development workflow" />
+    <MESSAGE value="chore: configure project environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: configure project environment" />
   </component>
 </project>
