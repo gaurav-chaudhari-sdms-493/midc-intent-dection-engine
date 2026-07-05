@@ -1,8 +1,0 @@
-fasttext
-PyMuPDF
-pytesseract
-Pillow
-anthropic
-requests
-imap-tools
-reportlab

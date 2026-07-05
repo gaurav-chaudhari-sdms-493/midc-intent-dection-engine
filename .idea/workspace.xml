@@ -4,46 +4,121 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="" />
+    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/confidence_scorer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/llm_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/model_router.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_en.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_hi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_mr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/classification/taxonomy.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/connectors/chat_transcript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/connectors/email_connector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/deduper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/ocr_engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/pdf_extractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/vision_llm_extractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/language/lang_detect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/language/translator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/normalizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ingestion/pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pytest.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements-dev.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routing/auto_responder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routing/officer_desk_notifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routing/rules_engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test_week1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AnalyticsDashboard/AnalyticsDashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AnalyticsDashboard/AnalyticsDashboard.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InquiryDetail/InquiryDetail.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InquiryDetail/InquiryDetail.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InquiryInbox/InquiryInbox.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InquiryInbox/InquiryInbox.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RoutingQueue/RoutingQueue.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RoutingQueue/RoutingQueue.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaxonomyManager/TaxonomyManager.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaxonomyManager/TaxonomyManager.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_fixtures/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_chat_transcript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_deduper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_integration_contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_lang_detect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_normalizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ocr_engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_pdf_extractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_pipeline.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="71" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sakib-inamdar-sdms488"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sakib-inamdar-sdms488&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/gaurav-chaudhari-sdms-493/midc-intent-dection-engine.git",
-    "accountId": "a67ee809-f668-4c8d-824c-c655f9ef4ce2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gaurav-chaudhari-sdms-493/midc-intent-dection-engine.git&quot;,
+    &quot;accountId&quot;: &quot;a67ee809-f668-4c8d-824c-c655f9ef4ce2&quot;
   }
-}]]></component>
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2325085902470294" />
-      <entry key="MS500" value="2.709490059681376" />
-      <entry key="S2" value="5.535829009699668" />
-      <entry key="S5" value="8.903860486020426" />
-      <entry key="S10" value="11.546126218596292" />
-      <entry key="S30" value="14.242894627962704" />
-      <entry key="S60" value="15.081612158211833" />
-      <entry key="M2" value="15.530352022515961" />
-      <entry key="M5" value="15.809565519280397" />
-      <entry key="M10" value="15.904347891787435" />
-      <entry key="M15" value="15.936134867223828" />
-      <entry key="M30" value="15.968018797014592" />
-      <entry key="H1" value="15.983997219388417" />
-      <entry key="H2" value="15.99199556241461" />
-      <entry key="H4" value="15.995997019074684" />
-      <entry key="D1" value="15.999332730634144" />
-      <entry key="W1" value="15.9999046732116" />
+      <entry key="MS100" value="1.299770953348105" />
+      <entry key="MS500" value="3.984474116117595" />
+      <entry key="S2" value="9.768999564865352" />
+      <entry key="S5" value="15.871144333617751" />
+      <entry key="S10" value="20.378085624153815" />
+      <entry key="S30" value="25.193263099952922" />
+      <entry key="S60" value="30.2455630902065" />
+      <entry key="M2" value="43.894818465953755" />
+      <entry key="M5" value="70.30339070621766" />
+      <entry key="M10" value="90.23127653761168" />
+      <entry key="M15" value="100.84975776523089" />
+      <entry key="M30" value="115.53420835617125" />
+      <entry key="H1" value="125.18279686026725" />
+      <entry key="H2" value="130.78282402374552" />
+      <entry key="H4" value="133.80897190061157" />
+      <entry key="D1" value="136.45623075612374" />
+      <entry key="W1" value="136.92201998572222" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -65,23 +140,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1836855214404731" />
-      <entry key="MS500" value="2.68758321470502" />
-      <entry key="S2" value="5.524315652988115" />
-      <entry key="S5" value="8.896060334874631" />
-      <entry key="S10" value="11.54091087166776" />
-      <entry key="S30" value="14.240699829782182" />
-      <entry key="S60" value="15.080443164705937" />
-      <entry key="M2" value="15.529748322722789" />
-      <entry key="M5" value="15.80931925335076" />
-      <entry key="M10" value="15.904223945929228" />
-      <entry key="M15" value="15.936052054864476" />
-      <entry key="M30" value="15.967977299653647" />
-      <entry key="H1" value="15.983976447858543" />
-      <entry key="H2" value="15.991985170930553" />
-      <entry key="H4" value="15.99599182190203" />
-      <entry key="D1" value="15.999331864239927" />
-      <entry key="W1" value="15.999904549436126" />
+      <entry key="MS100" value="1.0797688461033104" />
+      <entry key="MS500" value="3.894350338230647" />
+      <entry key="S2" value="9.703582809058615" />
+      <entry key="S5" value="15.81012907890692" />
+      <entry key="S10" value="20.330413453444972" />
+      <entry key="S30" value="25.170558139201663" />
+      <entry key="S60" value="30.231809609685808" />
+      <entry key="M2" value="43.885304567410884" />
+      <entry key="M5" value="70.29772683191364" />
+      <entry key="M10" value="90.2278753540936" />
+      <entry key="M15" value="100.84732553563275" />
+      <entry key="M30" value="115.53289474809722" />
+      <entry key="H1" value="125.18211188236367" />
+      <entry key="H2" value="130.78247389618357" />
+      <entry key="H4" value="133.80879484321508" />
+      <entry key="D1" value="136.45620096203288" />
+      <entry key="W1" value="136.92201572235248" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -96,29 +171,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/stark/PycharmProjects/midc-intent-dection-engine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "gaurav",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/stark/PycharmProjects/midc-intent-dection-engine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PY-261.26222.68" />
+        <option value="bundled-python-sdk-50341a9f1f9c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.26222.68" />
       </set>
     </attachedChunks>
   </component>
@@ -131,6 +211,9 @@
       <updated>1782969709075</updated>
       <workItem from="1782969710268" duration="57000" />
       <workItem from="1782970930283" duration="9555000" />
+      <workItem from="1783177799314" duration="1315000" />
+      <workItem from="1783233214573" duration="1838000" />
+      <workItem from="1783238825286" duration="434000" />
     </task>
     <servers />
   </component>
