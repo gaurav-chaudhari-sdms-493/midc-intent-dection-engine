@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 
 from app.core.database import get_db
 from app.services import auth_service
+from app.api.dependencies.auth import get_current_active_user
 
 from app.schemas.auth import (
     RegisterRequest,
@@ -47,3 +48,14 @@ def login(
         email=request.email,
         password=request.password,
     )
+
+
+@router.get(
+    "/me",
+)
+def me(
+    current_user=Depends(
+        get_current_active_user
+    ),
+):
+    return current_user
