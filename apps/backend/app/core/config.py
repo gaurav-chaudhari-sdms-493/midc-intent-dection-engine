@@ -5,10 +5,6 @@ from pydantic import computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-ROOT_DIR = Path(__file__).resolve().parents[4]
-ENV_FILE = ROOT_DIR / ".env"
-
-
 class Settings(BaseSettings):
     PROJECT_NAME: str
     ENVIRONMENT: str
@@ -17,6 +13,7 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
 
+    # Default for local development, overridden in Docker.
     DB_HOST: str = "localhost"
     DB_PORT: int = 5432
 
@@ -24,14 +21,12 @@ class Settings(BaseSettings):
     @property
     def DATABASE_URL(self) -> str:
         return (
-            "postgresql+psycopg2://"
+            f"postgresql+psycopg2://"
             f"{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}"
-            f"@{self.DB_HOST}:{self.DB_PORT}/"
-            f"{self.POSTGRES_DB}"
+            f"@{self.DB_HOST}:{self.DB_PORT}/{self.POSTGRES_DB}"
         )
 
     model_config = SettingsConfigDict(
-        env_file=ENV_FILE,
         env_file_encoding="utf-8",
         extra="ignore",
     )
