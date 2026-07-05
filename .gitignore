@@ -6,6 +6,6 @@ __pycache__/
 .Python
 env/
 venv/
-
+.idea/
 # Docker
 docker-compose.override.yml

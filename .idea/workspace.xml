@@ -4,67 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/midc-intent-dection-engine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/confidence_scorer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/llm_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/model_router.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_en.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_hi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/prompts/intent_classification_mr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/classification/taxonomy.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/connectors/chat_transcript.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/connectors/email_connector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/deduper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/ocr_engine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/pdf_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/document_processing/vision_llm_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/language/lang_detect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/language/translator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/normalizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ingestion/pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pytest.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements-dev.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routing/auto_responder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routing/officer_desk_notifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routing/rules_engine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test_week1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnalyticsDashboard/AnalyticsDashboard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnalyticsDashboard/AnalyticsDashboard.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InquiryDetail/InquiryDetail.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InquiryDetail/InquiryDetail.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InquiryInbox/InquiryInbox.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InquiryInbox/InquiryInbox.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoutingQueue/RoutingQueue.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoutingQueue/RoutingQueue.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TaxonomyManager/TaxonomyManager.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TaxonomyManager/TaxonomyManager.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_fixtures/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_chat_transcript.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_deduper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_integration_contract.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_lang_detect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_normalizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_ocr_engine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_pdf_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_pipeline.py" beforeDir="false" />
-    </list>
+    <list default="true" id="deebd156-93d7-43cb-a7e6-20545c1112f3" name="Changes" comment="Add initial docker-compose.yml configuration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +30,9 @@
     &quot;assignee&quot;: &quot;sakib-inamdar-sdms488&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4979c6d7-adf1-4f77-aeca-15348e2757d8" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/gaurav-chaudhari-sdms-493/midc-intent-dection-engine.git&quot;,
@@ -102,23 +45,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.299770953348105" />
-      <entry key="MS500" value="3.984474116117595" />
-      <entry key="S2" value="9.768999564865352" />
-      <entry key="S5" value="15.871144333617751" />
-      <entry key="S10" value="20.378085624153815" />
-      <entry key="S30" value="25.193263099952922" />
-      <entry key="S60" value="30.2455630902065" />
-      <entry key="M2" value="43.894818465953755" />
-      <entry key="M5" value="70.30339070621766" />
-      <entry key="M10" value="90.23127653761168" />
-      <entry key="M15" value="100.84975776523089" />
-      <entry key="M30" value="115.53420835617125" />
-      <entry key="H1" value="125.18279686026725" />
-      <entry key="H2" value="130.78282402374552" />
-      <entry key="H4" value="133.80897190061157" />
-      <entry key="D1" value="136.45623075612374" />
-      <entry key="W1" value="136.92201998572222" />
+      <entry key="MS100" value="1.1439171558117327" />
+      <entry key="MS500" value="2.4005540737272177" />
+      <entry key="S2" value="5.432351468266558" />
+      <entry key="S5" value="10.058992840311477" />
+      <entry key="S10" value="15.934541220447176" />
+      <entry key="S30" value="29.13885376278981" />
+      <entry key="S60" value="40.762090399663336" />
+      <entry key="M2" value="58.94421809729362" />
+      <entry key="M5" value="93.79085261424348" />
+      <entry key="M10" value="121.08424048838411" />
+      <entry key="M15" value="135.38518970617278" />
+      <entry key="M30" value="154.865642306499" />
+      <entry key="H1" value="167.5426743976093" />
+      <entry key="H2" value="174.87419650358413" />
+      <entry key="H4" value="178.83074752926774" />
+      <entry key="D1" value="182.2897085785671" />
+      <entry key="W1" value="182.89814352559802" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -140,23 +83,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0797688461033104" />
-      <entry key="MS500" value="3.894350338230647" />
-      <entry key="S2" value="9.703582809058615" />
-      <entry key="S5" value="15.81012907890692" />
-      <entry key="S10" value="20.330413453444972" />
-      <entry key="S30" value="25.170558139201663" />
-      <entry key="S60" value="30.231809609685808" />
-      <entry key="M2" value="43.885304567410884" />
-      <entry key="M5" value="70.29772683191364" />
-      <entry key="M10" value="90.2278753540936" />
-      <entry key="M15" value="100.84732553563275" />
-      <entry key="M30" value="115.53289474809722" />
-      <entry key="H1" value="125.18211188236367" />
-      <entry key="H2" value="130.78247389618357" />
-      <entry key="H4" value="133.80879484321508" />
-      <entry key="D1" value="136.45620096203288" />
-      <entry key="W1" value="136.92201572235248" />
+      <entry key="MS100" value="1.0623264589229728" />
+      <entry key="MS500" value="2.3576717584125895" />
+      <entry key="S2" value="5.404121026099756" />
+      <entry key="S5" value="10.038288846019329" />
+      <entry key="S10" value="15.918741257009053" />
+      <entry key="S30" value="29.129236291468505" />
+      <entry key="S60" value="40.754156898212266" />
+      <entry key="M2" value="58.93709763329996" />
+      <entry key="M5" value="93.78551155886824" />
+      <entry key="M10" value="121.08070550868227" />
+      <entry key="M15" value="135.38257289457584" />
+      <entry key="M30" value="154.86417805699315" />
+      <entry key="H1" value="167.54189702815034" />
+      <entry key="H2" value="174.8737955445445" />
+      <entry key="H4" value="178.83054384668176" />
+      <entry key="D1" value="182.28967417443735" />
+      <entry key="W1" value="182.89813859936578" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -181,7 +124,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "gaurav",
+    "git-widget-placeholder": "feacture/gaurav",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/home/stark/PycharmProjects/midc-intent-dection-engine",
     "node.js.detected.package.eslint": "true",
@@ -215,6 +158,15 @@
       <workItem from="1783233214573" duration="1838000" />
       <workItem from="1783238825286" duration="434000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial docker-compose.yml configuration">
+      <option name="closed" value="true" />
+      <created>1783242307927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783242307927</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,5 +182,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removed  legacy backend and frontend code related to AnalyticsDashboard and other components." />
+    <MESSAGE value="Add LICENSE and README.md files" />
+    <MESSAGE value="Add initial docker-compose.yml configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial docker-compose.yml configuration" />
   </component>
 </project>
